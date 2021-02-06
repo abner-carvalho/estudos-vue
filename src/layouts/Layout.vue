@@ -1,22 +1,23 @@
 <template>
-  <div id="app">
-    <Layout />
+  <div id="layout">
+    <Header />
+    <router-view />
   </div>
 </template>
 
 <script>
-import Layout from "./layouts/Layout.vue";
+import Header from "./Header.vue";
 
 export default {
-  name: "App",
+  name: "Layout",
   components: {
-    Layout,
+    Header,
   },
 };
 </script>
 
 <style>
-#app {
+#layout {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
